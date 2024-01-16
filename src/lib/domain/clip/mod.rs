@@ -1,6 +1,12 @@
 use serde::{Deserialize, Serialize};
+use thiserror::Error;
 
 pub mod field;
+
+#[derive(Debug, Error)]
+pub enum ClipError {
+
+}
 
 #[derive(Debug, Clone,Deserialize,Serialize)]
 pub struct Clip{
